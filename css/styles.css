@@ -4,7 +4,7 @@
 при наведении #FFFFFF; */
 
 /* nav background: #ffffff;
-hero background: #2F303A;
+hero background: #C4C4C4;
 advant background: #e5e5e5;
 services background: #e5e5e5;
 team background: #f5f4fa;
@@ -21,8 +21,9 @@ footer background: #2F303A; */
   --accent-color: #2196f3;
   --hero-title: #000000;
   --primary-white-color: #ffffff;
-  --hero-footer-background: #2f303a;
+  --hero-background: #c4c4c4;
   --team-background: #f5f4fa;
+  --footer-background: #2f303a;
 }
 
 body {
@@ -49,8 +50,6 @@ h5,
 h6 {
   color: var(--title-text-color);
 }
-
-/* ! ========================= ADDED ========================= */
 
 *,
 *::before,
@@ -174,8 +173,15 @@ img {
 /* ! ========================= Hero ========================= */
 
 .hero {
-  background-color: var(--hero-footer-background);
+  background-color: var(--hero-background);
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero .container {
@@ -326,7 +332,7 @@ img {
 }
 
 footer {
-  background-color: var(--hero-footer-background);
+  background-color: var(--footer-background);
 }
 
 .footer .logo-Studio {
