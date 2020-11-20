@@ -253,6 +253,31 @@ img {
   margin-right: 30px;
 }
 
+.features-item::before {
+  display: block;
+  content: '';
+  /* width: 100%; */
+  height: 120px;
+  background-color: var(--team-background);
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+}
+
+.features-item-antenna::before {
+  background-image: url(../img/svg/antenna.svg);
+}
+.features-item-clock::before {
+  background-image: url(../img/svg/clock.svg);
+}
+.features-item-diagram::before {
+  background-image: url(../img/svg/diagram.svg);
+}
+.features-item-astronaut::before {
+  background-image: url(../img/svg/astronaut.svg);
+}
+
 /* ! ========================= SERVICES ========================= */
 
 .services .container {
@@ -322,6 +347,37 @@ img {
 
 .section-team {
   background-color: var(--team-background);
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-svg {
+  fill: #afb1b8;
+}
+.social-list-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-svg {
+  fill: #ffffff;
+}
+
+.social-list-svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* ! ========================= Footer ========================= */
