@@ -201,7 +201,7 @@ img {
 /* ! ========================= Hero ========================= */
 
 .hero {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: var(--hero-background);
   text-align: center;
@@ -393,7 +393,10 @@ img {
 
 .social-list-svg {
   fill: #afb1b8;
+  width: 20px;
+  height: 20px;
 }
+
 .social-list-link:hover {
   background-color: var(--accent-color);
 }
@@ -402,20 +405,46 @@ img {
   fill: #ffffff;
 }
 
-.social-list-svg {
-  width: 20px;
-  height: 20px;
+/* ! ========================= CLIENTS ========================= */
+
+.clients {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  outline: 1px solid red;
 }
+.clients-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  width: 390px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+/* .clients-item::after {
+  display: block;
+  content: '';
+  /* width: 100%; */
+  height: 120px;
+  background-color: var(--team-background);
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+} */
 
 /* ! ========================= Footer ========================= */
 
-.footer {
-  padding: 60px 0;
-  color: var(--primary-white-color);
-}
-
 footer {
+  width: 1600px;
+  margin: 0 auto;
+  color: var(--primary-white-color);
   background-color: var(--footer-background);
+  /* padding: 60px 0; */
 }
 
 .footer .logo-Studio {
@@ -437,15 +466,67 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.footer-logo {
-  margin-bottom: 20px;
+.footer-list {
+  margin-top: 20px;
 }
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-/* ! ========================= Work Samples Filter ========================= */
+.footer-combine {
+  display: flex;
+  }
+.footer-address {
+  margin: 60px 0;
+}
+
+
+.slogan {
+  color: var(--primary-white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-social {
+  margin-top: 72px;
+  /* margin-bottom: 100px;  */
+  margin-left: 70px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 16px 32px 30px; */
+  width: 206px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-svg {
+  fill: var(--primary-white-color);
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-link:hover {
+  background-color: var(--accent-color);
+}
+
+/* ! ===================== Work Samples Filter ===================== */
 
 .work-samples-list {
   display: flex;
