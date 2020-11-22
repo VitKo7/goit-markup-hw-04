@@ -82,6 +82,7 @@ img {
 .header .container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navigation {
@@ -163,10 +164,14 @@ img {
 .header-contact-list {
   display: flex;
   align-items: center;
-  /* todo выровнять по центру? */
-  /* justify-content: baseline; */
   background-color: #ffffff;
   margin-left: auto;
+}
+
+.mail,
+.tel {
+  display: flex;
+  align-items: center;
 }
 
 .header-contact-item .mail {
@@ -175,18 +180,19 @@ img {
 .envelope-svg {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
 }
 .phone-svg {
   width: 10px;
   height: 16px;
-}
-
-.contact-item-envelope {
-  width: 161px
   margin-right: 10px;
 }
+
+.mail {
+  width: 161px;
+}
 .contact-item-phone {
-    width: 142px;
+  width: 142px;
 }
 
 .header-contact-item {
@@ -194,10 +200,17 @@ img {
 }
 
 /* todo почему focus не работает? */
-.header-contact-item:hover, 
+.header-contact-item:hover,
 .header-contact-item:focus {
   fill: var(--accent-color);
 }
+
+.header-line {
+  width: 1600px;
+  margin: 0 auto;
+  border: 1px solid #ececec;
+}
+
 /* ! ========================= Hero ========================= */
 
 .hero {
@@ -249,10 +262,13 @@ img {
 
 /* ! ========================= Features ========================= */
 
+.features-section {
+  padding: 94px 0;
+}
+
 .section .features {
   display: flex;
   align-items: center;
-  padding: 94px 0;
 }
 
 .section .title {
@@ -306,7 +322,7 @@ img {
 
 /* ! ========================= SERVICES ========================= */
 
-.services .container {
+.services-section {
   padding: 94px 0;
 }
 
@@ -329,9 +345,6 @@ img {
 
 .section-team {
   background: #f5f4fa;
-}
-
-.section-team .container {
   padding: 94px 0;
 }
 
@@ -425,21 +438,9 @@ img {
   margin-bottom: 50px;
 }
 
-/* .clients-item::after {
-  display: block;
-  content: '';
-  /* width: 100%; */
-  height: 120px;
-  background-color: var(--team-background);
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-size: 70px 70px;
-  background-position: center;
-} */
-
 /* ! ========================= Footer ========================= */
 
-footer {
+.footer {
   width: 1600px;
   margin: 0 auto;
   color: var(--primary-white-color);
@@ -476,11 +477,10 @@ footer {
 
 .footer-combine {
   display: flex;
-  }
+}
 .footer-address {
   margin: 60px 0;
 }
-
 
 .slogan {
   color: var(--primary-white-color);
@@ -528,33 +528,8 @@ footer {
 
 /* ! ===================== Work Samples Filter ===================== */
 
-.work-samples-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.work-samples {
-  margin-top: 34px;
-}
-
-.work-samples-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.sample-name {
-  margin: 20px 24px 4px;
-}
-
-.sample-type {
-  margin: 0 24px 20px;
-}
-
-.work-samples-item:nth-child(n + 4) {
-  margin-top: 30px;
-}
-
 .samples {
-  margin: 94px 0;
+  padding: 94px 0;
 }
 
 .filter-list {
@@ -564,20 +539,13 @@ footer {
   margin: 0 auto;
 }
 
-.filter-list-item {
+.radio-button {
   padding: 6px 22px;
   margin-bottom: 16px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.filter-list-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.radio-button {
+  border: 0;
+  background: var(--team-background);
+  border-radius: 4px;
   color: var(--title-text-color);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -585,10 +553,16 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .radio-button:hover,
 .radio-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .sample-name {
@@ -603,4 +577,29 @@ footer {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.work-samples-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-samples {
+  margin-top: 34px;
+}
+
+.work-samples-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.sample-title {
+  padding: 20px 24px;
+}
+
+.sample-name {
+  margin-bottom: 4px;
+}
+
+.work-samples-item:nth-child(n + 4) {
+  margin-top: 30px;
 }
