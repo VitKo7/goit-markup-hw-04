@@ -206,6 +206,7 @@ img {
 }
 
 .header-line {
+  /* border bottom */
   width: 1600px;
   margin: 0 auto;
   border: 1px solid #ececec;
