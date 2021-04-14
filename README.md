@@ -1,2 +1,2 @@
-# goit-markup-hw-02
+# markup-02
 Styles practice
